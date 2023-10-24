@@ -9,8 +9,22 @@ enum btnState {
 }
 
 const LoadingButton = () => {
-  const [loading, setLoading] = useState(false)
   const [buttonState, setButtonState] = useState<btnState>(btnState.INITIAL)
+
+  const [isSaving, setIsSaving] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  const initialButton = () => {
+    return {buttonState}
+  }
+
+  const loadingButton = () => {
+    return {buttonState}
+  }
+
+  const finishedButton = () => {
+    return {buttonState}
+  }
 
   return (
     <button 
