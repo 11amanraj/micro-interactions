@@ -1,7 +1,8 @@
 import Image from 'next/image'
+import LoadingButton from './components/LoadingButton'
 
 export default function Home() {
   return (
-    <div>Working</div>
+    <LoadingButton></LoadingButton>
   )
 }
